@@ -1,0 +1,40 @@
+{
+	"Respuestas": {
+		"notFound": "No existe esa respuesta en la base de datos",
+		"Turnos": {
+			"Header": "Los siguientes turnos disponibles son:",
+			"Items": "num. ${turnos[num]}",
+			"Final": "Para elegir un turno, mande un mensaje con el numero de turno",
+			"Registrado": "El turno fue registrado!",
+			"Confirmado": "El turno elegido es:\n${turno}\nAhora escriba su nombre ",
+			"Invalido": "No es un turno valido, vuelva a solicitarlos",
+			"Consulta": {
+				"Header": "Tienes los siguientes turnos registrados a tu numero:",
+				"Items": "num. fecha",
+				"Final": ""
+			}
+		},
+		"PrimerMensaje": "Hola!, para sacar algun turno, escriba 'Turno', para consultar los turnos asociados a tu numero, escriba 'Consultar turnos'"
+	},
+	"Base": {
+		"puerto": 8080,
+		"nombreBase": "ChatbotPrueba",
+		"host": "localhost",
+		"user": "root"
+	},
+	"Turnos": {
+		"Periodo": 45,
+		"Cantidad": 3,
+		"Formato": {
+			"weekday": "long",
+			"year": "numeric",
+			"day": "numeric",
+			"month": "numeric",
+			"hour": "numeric",
+			"minute": "numeric"
+		}
+	},
+	"Configuracion": {
+		"Locale": "es-AR"
+	}
+}
