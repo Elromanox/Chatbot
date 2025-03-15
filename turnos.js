@@ -177,8 +177,8 @@ module.exports = {
 			hoy.toISOString().slice(0, 16));
 
 		let turnosSiguientes = siguientesTurnos.map(turno => {
-			let nuevoTurno = new Date(turno.Fecha);
-			nuevoTurno.setHours(nuevoTurno.getHours() - nuevoTurno.getTimezoneOffset() / 60);
+			let nuevoTurno = new Date();
+			nuevoTurno.setUTCDate(turno.Fecha);
 			return nuevoTurno;
 		});
 		if (siguientesTurnos.length === 0) {
